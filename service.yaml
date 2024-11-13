@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: book-service
+spec:
+  selector:
+    name: book-service
+  ports:
+    - port: 8090
+      name: web
+      targetPort: 8090
+      protocol: TCP
+
