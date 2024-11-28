@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: book-service
-          image: anthonyikeda/book-service:0.0.1-SNAPSHOT
+          image: anthonyikeda/book-service:0.0.2-SNAPSHOT
           env:
             - name: SPRING_DATASOURCE_URL
-              value: jdbc:postgresql://psql-test-postgresql:5432/library_db
+              value: jdbc:postgresql://general-release-postgresql.default:5432/library_db
             - name: OTEL_EXPORTER_OTLP_LOGS_ENDPOINT
               value: http://lgtm:4318/v1/logs
             - name: OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
@@ -32,4 +32,11 @@ spec:
               value: book-service
             - name: OTEL_RESOURCE_ATTRIBUTES_SERVICE_NAMESPACE
               value: library
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "1000m"
+            requests:
+              memory: "256Mi"
+              cpu: "500m"
 

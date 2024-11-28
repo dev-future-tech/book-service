@@ -45,3 +45,7 @@ Then access the endpoint
 ----
 curl http://localhost:8080/greeting?name=User
 ----
+
+= Links
+
+https://stackoverflow.com/questions/72773898/call-my-api-typescript-with-my-frontend-application-in-vue3-js

@@ -10,12 +10,16 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>book-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>book-service</name>
     <description>RESTful web application</description>
+
     <properties>
         <java.version>23</java.version>
+        <micrometer.version>1.14.1</micrometer.version>
+        <micrometer.tracing.bridget.version>1.4.0</micrometer.tracing.bridget.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
