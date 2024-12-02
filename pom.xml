@@ -20,6 +20,11 @@
         <micrometer.tracing.bridget.version>1.4.0</micrometer.tracing.bridget.version>
     </properties>
 
+    <scm>
+        <url>https://www.github.com/dev-future-tech/book-service.git</url>
+        <connection>scm:git:https://github.com/dev-future-tech/book-service.git</connection>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
