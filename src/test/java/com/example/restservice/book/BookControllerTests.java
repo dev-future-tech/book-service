@@ -39,7 +39,7 @@ public class BookControllerTests {
     BookService service;
 
     @DynamicPropertySource
-    static void neo4jProperties(DynamicPropertyRegistry registry) {
+    static void extraProperties(DynamicPropertyRegistry registry) {
 //        registry.add("spring.datasource.username", postgreSQLContainer::getUsername);
 //        registry.add("spring.datasource.password", postgreSQLContainer::getPassword);
 //        registry.add("spring.datasource.driver-class-name", postgreSQLContainer::getDriverClassName);
