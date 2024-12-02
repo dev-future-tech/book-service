@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>book-service</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>book-service</name>
     <description>RESTful web application</description>
 
@@ -22,7 +22,7 @@
     <scm>
         <url>https://www.github.com/dev-future-tech/book-service.git</url>
         <connection>scm:git:https://github.com/dev-future-tech/book-service.git</connection>
-      <tag>book-service-0.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <dependencies>
